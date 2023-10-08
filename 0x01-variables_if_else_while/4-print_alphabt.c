@@ -10,13 +10,13 @@ int main(void)
 {
 	char alphabet = 'x';
 
-	while ( alphabet <= 'z')
+	while (alphabet <= 'z')
 	{
-		if (alphabet != 'q' && alphabet != 'e')
+		if (alphabet != 'q' && alphabet = 'e')
 		{
 			putchar(alphabet);
 		}
-		alphabet++;
+		alphabetgcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-print_alphabt.c -o 4-print_alphabt++;
 	}
 	putchar('\n');
 	return (0);
