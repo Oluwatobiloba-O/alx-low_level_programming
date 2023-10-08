@@ -8,15 +8,17 @@
  */
 int main(void)
 {
-	char alphabet = 'x';
+	char alphabet = 'a';
+	char q = 'q';
+	char e = 'e';
 
 	while (alphabet <= 'z')
 	{
-		if (alphabet != 'q' && alphabet = 'e')
+		if (alphabet != q && alphabet != e)
 		{
 			putchar(alphabet);
 		}
-		alphabetgcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-print_alphabt.c -o 4-print_alphabt++;
+		alphabet++;
 	}
 	putchar('\n');
 	return (0);
