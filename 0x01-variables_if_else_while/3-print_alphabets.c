@@ -1,26 +1,19 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - main function
  *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 int main(void)
 {
-	char c;
-	char d;
+char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int x;
 
-	c = 'a';
-	d = 'A';
-	while
-		(c <= 'z') {
-			putchar (c);
-			c++;
-		}
-	while
-		(d <= 'z') {
-			putchar (d);
-			d++;
-		}
+	for (x = 0; x < 52; x++)
+	{
+		putchar(alp[x]);
+	}
 	putchar('\n');
 	return (0);
 }
