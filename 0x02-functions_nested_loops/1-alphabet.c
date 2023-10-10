@@ -7,13 +7,13 @@
  */
 void print_alphabet(void)
 {
-char al;
+char s;
 
-al = 'a';
-while (al <= 'z')
+s = 'a';
+while (s <= 'z')
 {
-_putchar(al);
-al++;
+_putchar(s);
+s++;
 }
 _putchar('\n');
 }
