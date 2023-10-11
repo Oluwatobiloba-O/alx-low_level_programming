@@ -1,0 +1,31 @@
+#include <stdio.h>
+/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+{
+int x;
+long int fibonacci[50];
+
+fibonacci[0] = 1;
+fibonacci[1] = 2;
+printf("%1d, %1d, ", fibonacci[0], fibonacci[1]);
+
+for (x = 2; x < 50; x++)
+{
+fibonacci[x] = fibonacci[x - 1] + fibonacci[x - 2];
+
+if (x == 49)
+{
+printf("%1d\n", fibonacci[1]);
+}
+else
+{
+printf("%1d, ", fibonacci[x]);
+}
+}
+return (0);
+}
