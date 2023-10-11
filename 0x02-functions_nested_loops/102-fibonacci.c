@@ -20,7 +20,7 @@ fibonacci[x] = fibonacci[x - 1] + fibonacci[x - 2];
 
 if (x == 49)
 {
-printf("%ld\n", fibonacci[1]);
+printf("%ld\n", fibonacci[x]);
 }
 else
 {
