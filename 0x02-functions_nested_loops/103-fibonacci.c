@@ -19,5 +19,6 @@ sum = y + z;
 y = z;
 z = sum;
 }
+printf("%ld\n", tsum);
 return (0);
 }

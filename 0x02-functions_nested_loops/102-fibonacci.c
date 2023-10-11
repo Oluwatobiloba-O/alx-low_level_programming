@@ -12,7 +12,7 @@ long int fibonacci[50];
 
 fibonacci[0] = 1;
 fibonacci[1] = 2;
-printf("%1d, %1d, ", fibonacci[0], fibonacci[1]);
+printf("%ld, %ld, ", fibonacci[0], fibonacci[1]);
 
 for (x = 2; x < 50; x++)
 {
@@ -20,11 +20,11 @@ fibonacci[x] = fibonacci[x - 1] + fibonacci[x - 2];
 
 if (x == 49)
 {
-printf("%1d\n", fibonacci[1]);
+printf("%ld\n", fibonacci[1]);
 }
 else
 {
-printf("%1d, ", fibonacci[x]);
+printf("%ld, ", fibonacci[x]);
 }
 }
 return (0);
