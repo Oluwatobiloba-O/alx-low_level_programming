@@ -1,9 +1,5 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
-/**
- * print_times_table - print multiplication table up to n
- * @n: integer argument
- */
 int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
@@ -16,4 +12,5 @@ void jack_bauer(void);
 void times_table(void);
 int add(int, int);
 void print_to_98(int n);
+void print_times_table(int n);
 #endif
