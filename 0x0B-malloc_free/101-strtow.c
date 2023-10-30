@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
-* **strtow -  a function that splits a string into abc     
+* **strtow -  a function that splits a string into words
 * @str: strtow
 *
 * Return: Always zero
@@ -22,10 +22,10 @@ xyz = strlen(str);
 num_word = 0;
 for (i = 0; i < xyz; i++)
 {
-if (!isspace(str[i]) && (i == 0 || isspace(str[i - 1])))   
+if (!isspace(str[i]) && (i == 0 || isspace(str[i - 1])))
 num_word++;
 }
-abc = (char **) malloc((num_word + 1) * sizeof(char *));   
+abc = (char **) malloc((num_word + 1) * sizeof(char *));
 if (abc == NULL)
 return (0);
 i = 0;
@@ -37,7 +37,7 @@ i++;
 k = i;
 while (k < xyz && !isspace(str[k]))
 k++;
-abc[j] = (char *) malloc((k - i + 1) * sizeof(char));      
+abc[j] = (char *) malloc((k - i + 1) * sizeof(char));
 if (abc[j] == NULL)
 return (0);
 strncpy(abc[j], str + i, k - i);
