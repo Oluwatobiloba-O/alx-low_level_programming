@@ -2,14 +2,10 @@
 #include <stdio.h>
 
 /**
-* init_dog - Entry point (init_dog)
+* print_dog - Entry point (print_dog)
 *
 * @d: pointer
-* @name: dog's name
-* @age: dog's age
-* @owner: dog's owner
 *
-* Return: Always 0.
 */
 void print_dog(struct dog *d)
 {

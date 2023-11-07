@@ -1,18 +1,16 @@
 #include "dog.h"
 #include <stdlib.h>
+int _strlen(char *x);
+char *_strcpy(char *dest, char *src);
 
 /**
-* init_dog - Entry point (init_dog)
+* new_dog - .
+* @name: .
+* @age: .
+* @owner: .
 *
-* @d: pointer
-* @name: dog's name
-* @age: dog's age
-* @owner: dog's owner
-*
-* Return: Always 0.
+* Return: .
 */
-int _strlen(char *s);
-char *_strcpy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *kayla;
