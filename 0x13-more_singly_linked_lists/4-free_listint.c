@@ -14,6 +14,6 @@ while (head != NULL)
 {
 recent = head;
 head = head->next;
-}
 free(recent);
+}
 }
