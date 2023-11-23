@@ -25,5 +25,6 @@ if (b[z - 1] == '1')
 y += x;
 x *= 2;
 z--;
-}return (y);
+}
+return (y);
 }

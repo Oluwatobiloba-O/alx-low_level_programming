@@ -15,7 +15,7 @@ if (index > 64)
 return (-1);
 
 for (xyz = 1; index > 0; index--, xyz *= 2)
-		;
+;
 *n += xyz;
 
 return (1);

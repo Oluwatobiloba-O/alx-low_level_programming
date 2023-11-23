@@ -15,8 +15,8 @@ unsigned int a;
 if (index > 64)
 return (-1);
 a = index;
-for (xyz = 1; a > 0; xyz *= 2, a--);
-
+for (xyz = 1; a > 0; xyz *= 2, a--)
+;
 
 if ((*n >> index) & 1)
 *n -= xyz;

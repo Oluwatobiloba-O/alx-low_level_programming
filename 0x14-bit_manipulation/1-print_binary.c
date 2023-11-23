@@ -16,8 +16,8 @@ printf("0");
 return;
 }
 
-for (xyz = n, a = 0; (xyz >>= 1) > 0; a++);
-
+for (xyz = n, a = 0; (xyz >>= 1) > 0; a++)
+;
 for (; a >= 0; a--)
 {
 if ((n >> a) & 1)
