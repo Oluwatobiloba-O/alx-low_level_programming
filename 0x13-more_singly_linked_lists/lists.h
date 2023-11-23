@@ -3,6 +3,10 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <stdio.h>
+<<<<<<< HEAD
+=======
+#include <string.h>
+>>>>>>> 53f4f4fdc8c367c363e046a34f27207097ce67b3
 
 /**
  * struct listint_s - singly linked list

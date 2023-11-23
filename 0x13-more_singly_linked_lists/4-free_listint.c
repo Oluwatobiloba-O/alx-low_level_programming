@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-* free_listint - Entry Point (free_listint)
+* free_listint - Entry Points (free_listint)
 *
 * @head: pointer
 * Return: 0
@@ -14,6 +14,6 @@ while (head != NULL)
 {
 recent = head;
 head = head->next;
-}
 free(recent);
+}
 }
