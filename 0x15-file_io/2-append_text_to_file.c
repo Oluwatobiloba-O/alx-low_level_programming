@@ -28,8 +28,8 @@ close(x);
 return (1);
 }
 
-len = 0; 
-while (text_content[len] != '\0');
+len = 0;
+while (text_content[len] != '\0')
 len++;
 
 z = write(x, text_content, len);
