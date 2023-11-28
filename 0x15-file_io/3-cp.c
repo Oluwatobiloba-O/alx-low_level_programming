@@ -46,40 +46,33 @@ int main(int ac, char *av[])
 {
 int input_x, output_x, status_i, status_o;
 char buf[MAXSIZE];
-mode_t z;
 
-z = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
-if (ac != 3)
-dprintf(SE, "Usage: cp file_from file_to\n"), exit(97);
-input_x = open(av[1], O_RDONLY);
+if (argc != 3)
+__exit(97, NULL, 0);
+
+input_x = open(argv[1], O_RDONLY);
 if (input_x == -1)
-dprintf(SE, "Error: Can't read from file %s\n", av[1]), exit(98);
-output_x = open(av[2], O_CREAT | O_WRONLY | O_TRUNC, z);
-if (output_x == -1)
-dprintf(SE, "Error: Can't write to %s\n", av[2]), exit(99);
-do {
-status_i = read(input_x, buf, MAXSIZE);
-if (status_i == -1)
-{
-dprintf(SE, "Error: Can't read from file %s\n", av[1]);
-exit(98);
-}
-if (status_i > 0)
-{
-status_o = write(output_x, buf, (ssize_t) status_i);
-if (status_o == -1)
-{
-dprintf(SE, "Error: Can't write to %s\n", av[2]);
-exit(99);
-}
-}
-} while (status_i > 0);
-status_i = close(input_x);
-if (status_i == -1)
-dprintf(SE, "Error: Can't close x %d\n", input_x), exit(100);
-status_o = close(output_x);
-if (status_o == -1)
-dprintf(SE, "Error: Can't close x %d\n", output_x), exit(100);
-return (0);
+__exit(98, argv[1], 0);
 
+output_x = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+if (output_x == -1)
+__exit(99, argv[2], 0);
+
+while ((status_i = read(input_x, buf, MAXSIZE)) > 0)
+{
+status_o = write(output_x, buf, status_i);
+if (status_o == -1 || status_o != status_i)
+__exit(99, argv[2], 0);
+}
+
+if (status_i == -1)
+__exit(98, argv[1], 0);
+
+if (close(input_x) == -1)
+__exit(100, NULL, input_x);
+
+if (close(output_x) == -1)
+__exit(100, NULL, output_x);
+
+return (0);
 }
