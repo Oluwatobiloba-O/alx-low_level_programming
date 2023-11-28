@@ -44,8 +44,6 @@ return (0);
 */
 int main(int ac, char *av[])
 {
-int main(int ac, char *av[])
-{
 int input_x, output_x, status_i, status_o;
 char buf[MAXSIZE];
 mode_t z;
