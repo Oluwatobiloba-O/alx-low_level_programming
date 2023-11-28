@@ -4,7 +4,7 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-#define MAXSIZE 1024
+#define MAXSIZE 1204
 #define SE STDERR_FILENO
 
 /**
