@@ -1,3 +1,0 @@
-Creating my simple shell...
-
-By Oluwatobiloba Otun and Lawal Oluwatobi Mustapha
